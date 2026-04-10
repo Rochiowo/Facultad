@@ -1,0 +1,27 @@
+COMANDOS PARA LA CONFIGURACIÓN DE GIT
+Solo se hace una vez:
+	git config --global user.name "Rocio"
+	git config --global user.email "rociorecio05@gmail.com"
+
+Crea un archivo vacío y convierte la carpeta en repositorio de Git:
+	touch hellogit.py
+	git init
+
+Cambia el nombre de la rama principal a main:
+	git branch -m main
+
+Ver estado, agregar cambios, guardarlos y verlos
+	git status
+	git add hellogit.py   ///   git add .
+	git commit -m "Este es mi primer commit"
+	git log
+	git log --graph
+	git log --graph --pretty=oneline
+	git log --graph --decorate --all --oneline
+
+Ignorar archivos y ver cambios
+	touch .gitignore
+              **/.
+	git add .gitignore
+	git commit -m "Se añade el .gitignore"
+	git diff
